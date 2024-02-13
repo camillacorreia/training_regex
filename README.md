@@ -77,3 +77,6 @@ Laziness para Correspondências Curtas: O comportamento não ganancioso é útil
 | ?? (lazy)     | Corresponde a 0 ou 1 ocorrência (não ganancioso).  | a.??b corresponde a "ab" em "aab" (correspondência mais curta possível). |
 | {n,m} (greedy)| Corresponde a pelo menos n e no máximo m ocorrências (ganancioso). | a{2,3} corresponde a "aaa" em "aaaa" (correspondência mais longa possível). |
 | {n,m}? (lazy) | Corresponde a pelo menos n e no máximo m ocorrências (não ganancioso). | a{2,3}? corresponde a "aa" em "aaaa" (correspondência mais curta possível). |
+
+### Backreference
+Backreference <b> \1 </b> é um grupo de captura. Isso significa que temos a exata correspondência. Em outras palavras, temos um espelho desse primeiro grupo que criamos.
