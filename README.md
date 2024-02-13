@@ -79,4 +79,10 @@ Laziness para Correspondências Curtas: O comportamento não ganancioso é útil
 | {n,m}? (lazy) | Corresponde a pelo menos n e no máximo m ocorrências (não ganancioso). | a{2,3}? corresponde a "aa" em "aaaa" (correspondência mais curta possível). |
 
 ### Backreference
-Backreference <b> \1 </b> é um grupo de captura. Isso significa que temos a exata correspondência. Em outras palavras, temos um espelho desse primeiro grupo que criamos.
+Backreference <b> \1 </b> é um grupo de captura. Isso significa que temos a exata correspondência. Em outras palavras, temos um espelho do primeiro grupo que criamos.
+
+### Word boundary
+O <b> \b </b>, que corresponde ao word boundary (limite da palavra) significa que criamos um limite entre as informações, entre uma sequência de caracteres. Nesse caso, por exemplo, ela só vai buscar a ocorrência "bank" isoladamente, e não como parte de outras palavras.
+
+### Non-Word Boundary
+Ainda no contexto de estabelecer limites entre as palavras, temos os metacaracteres que indicam o oposto de um limite de palavras. O \B define um not-a-word boundary, ou seja, é usado para localizar posições em que uma palavra não começa ou termina.
