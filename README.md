@@ -86,3 +86,16 @@ O <b> \b </b>, que corresponde ao word boundary (limite da palavra) significa qu
 
 ### Non-Word Boundary
 Ainda no contexto de estabelecer limites entre as palavras, temos os metacaracteres que indicam o oposto de um limite de palavras. O \B define um not-a-word boundary, ou seja, é usado para localizar posições em que uma palavra não começa ou termina.
+
+### Antecipação Negativa
+Se usa uma antecipação negativa em expressões regulares (regex) quando você está basicamente dizendo: "Quero encontrar algo que não seja seguido por um determinado padrão."
+
+### Positive Lookahead
+Permite realizar correspondências baseadas em padrões que vêm a seguir, sem incluir esses padrões na correspondência final.
+
+``
+X(?=Y)
+``
+
+- X é a expressão regular que você deseja corresponder;
+- Y é a expressão regular que você deseja verificar se ocorre à frente de X, mas sem incluí-la na correspondência final.

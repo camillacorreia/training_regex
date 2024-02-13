@@ -9,7 +9,7 @@ fetch(url)
     }
   })
   .then(html_content => {
-    const pattern = /\bbank\b/gi; // Padrão para encontrar linhas com a palavra "moni"
+    const pattern = /\bbank\b/gi;
     const linhas = html_content.split('\n');
 
     linhas.forEach((linha, indice) => {
